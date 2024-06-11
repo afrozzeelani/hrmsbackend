@@ -4,7 +4,6 @@ const express = require('express');
 const departmentRoute = express.Router();
 
 const cityController = require('../controllers/cityController');
-const {verifyHR, verifyAdminHR} = require('../middleware/authMiddleware');
 
 const { getAllDepartment, createDepartment, updateDepartment, deleteDepartment } = require('../controllers/DepartmentController');
 
