@@ -47,6 +47,7 @@ const salaryRoute = require("./routes/salaryRoute");
 const leaveRoute = require("./routes/leaveRoute");
 const educationRoute = require("./routes/educationRoute");
 const personalInfoRoute = require("./routes/personalInfoRoute");
+const { totalLeaveRoute } = require("./routes/totalLeaveRoute");
 const { forgotePassRoute } = require("./routes/forgotePassRoute");
 const locationRoutes = require("./routes/locationRoutes");
 const { taskRoute } = require("./routes/taskRoute");
@@ -104,6 +105,8 @@ app.use("/api", loginRoute);
 app.use("/api", taskRoute);
 app.use("/api", attendanceRoute);
 app.use("/api", locationRoutes);
+app.use("/api", totalLeaveRoute);
+
 // app.use("/api", teamRoute);
 
 const multer = require("multer");

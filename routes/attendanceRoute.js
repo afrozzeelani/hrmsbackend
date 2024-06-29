@@ -8,7 +8,7 @@ const {
   findAllHolidays,
   todaysAttendance,
   attendanceRegister,
-  getattendance
+  getEmployeeTodayAttendance // Add this function to your controller
 } = require("../controllers/AttendanceController");
 
 const attendanceRoute = express.Router();
@@ -27,6 +27,12 @@ attendanceRoute.get("/holidays", findAllHolidays);
 
 attendanceRoute.get("/attendance-register/:year/:month", attendanceRegister);
 attendanceRoute.get("/todays-attendance", todaysAttendance);
+
+// Route to fetch today's attendance for a particular employee
+attendanceRoute.get(
+  "/employee/:employeeId/today-attendance",
+  getEmployeeTodayAttendance
+);
 
 module.exports = {
   attendanceRoute
