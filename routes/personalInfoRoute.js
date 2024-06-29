@@ -15,14 +15,12 @@ const {
 // GET: Retrieve all personalInfo
 personalInfoRoute.get(
   "/personal-info/:id",
-  verifyAdminHREmployee,
   personalInfo
 );
 
 // PUT: Update an existing personalInfo
 personalInfoRoute.put(
   "/personal-info/:id",
-  verifyAdminHREmployee,
   updatepersonalInfo
 );
 

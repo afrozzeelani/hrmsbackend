@@ -21,17 +21,14 @@ const {
 // GET: Retrieve all leave
 leaveRoute.get(
   "/leave-application-emp/:id?",
-  verifyAdminHREmployee,
   getAllLeaveApplication
 );
 leaveRoute.get(
   "/leave-application-man/:id?",
-  verifyAdminHR,
   getAllLeaveApplication
 );
 leaveRoute.get(
   "/leave-application-hr",
-  verifyAdminHR,
   getAllLeaveApplicationHr
 );
 
@@ -50,24 +47,20 @@ leaveRoute.post(
 // PUT: Update an existing leave
 leaveRoute.put(
   "/leave-application-emp/:id?",
-  verifyHREmployee,
   updateLeaveApplication
 );
 leaveRoute.put(
   "/leave-application-hr/:id",
-  verifyAdminHR,
   updateLeaveApplicationHr
 );
 
 // DELETE: Delete a leave
 leaveRoute.delete(
   "/leave-application-emp/:id/:id2",
-  verifyEmployee,
   deleteLeaveApplication
 );
 leaveRoute.delete(
   "/leave-application-hr/:id/:id2",
-  verifyAdminHR,
   deleteLeaveApplicationHr
 );
 

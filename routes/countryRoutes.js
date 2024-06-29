@@ -1,19 +1,19 @@
 const express = require('express');
 const contery = express.Router();
 // const countryController = require('../controllers/countryController');
-const {verifyAdminHR} = require('../middleware/authMiddleware');
+// const {verifyAdminHR} = require('../middleware/authMiddleware');
 const { getAllCountries, createCountry, updateCountry, deleteCountry } = require('../controllers/countryController');
 // GET: Retrieve all countries
 // verifyAdminHR
-contery.get("/country", verifyAdminHR, getAllCountries);
+contery.get("/country",  getAllCountries);
 
 // POST: Create a new country
-contery.post("/country", verifyAdminHR, createCountry);
+contery.post("/country",  createCountry);
 
 // PUT: Update an existing country
-contery.put("/country/:id", verifyAdminHR, updateCountry);
+contery.put("/country/:id", updateCountry);
 
 // DELETE: Delete a country
-contery.delete("/country/:id", verifyAdminHR, deleteCountry);
+contery.delete("/country/:id",  deleteCountry);
 
 module.exports = contery;

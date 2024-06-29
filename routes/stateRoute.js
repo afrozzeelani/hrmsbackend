@@ -8,15 +8,15 @@ const { getAllStates, createState, updateState, deleteState } = require('../cont
 
 // GET: Retrieve all countries
 // verifyAdminHR
-stateRoute.get("/state/:id?", verifyAdminHR, getAllStates);
+stateRoute.get("/state/:id?", getAllStates);
 
 // POST: Create a new state
-stateRoute.post("/state", verifyAdminHR, createState);
+stateRoute.post("/state",  createState);
 
 // PUT: Update an existing state
-stateRoute.put("/state/:id", verifyAdminHR, updateState);
+stateRoute.put("/state/:id",  updateState);
 
 // DELETE: Delete a state
-stateRoute.delete("/state/:id", verifyAdminHR, deleteState);
+stateRoute.delete("/state/:id",  deleteState);
 
 module.exports = stateRoute;
