@@ -4,7 +4,7 @@ Note: this is a repository of Employee Management System backend. the repository
 
 -------------
 
-Website: https://employee-management-fk.netlify.com
+Website:
 
 -------------
 
@@ -18,6 +18,7 @@ Website: https://employee-management-fk.netlify.com
 This web application contains three account access:
 - Admin
 - HR
+- Manager
 - Employee
 
 All three accounts contain different privileges and authentication.
@@ -35,6 +36,7 @@ The different part or module of this project is as follows:
 - Login Page
 - Admin Dashboard
 - HR Dashboard
+- Manager Dashboard
 - Employee Dashboard
 - Authentication and authorization(user verification)
 - Database(MongoDB)
