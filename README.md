@@ -1,6 +1,6 @@
 # Employee Management System
 
-Note: this is a repository of Employee Management System backend. the repository of the Frontend is available here: https://github.com/fenil29/employee-management-system-frontend-react
+Note: this is a repository of Employee Management System backend. the repository of the Frontend is available
 
 -------------
 
